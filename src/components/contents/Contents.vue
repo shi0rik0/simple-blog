@@ -11,7 +11,7 @@ interface Article {
 const articles = reactive<Article[]>([])
 
 onMounted(() => {
-    fetch('/articles/__metadata.json')
+    fetch('articles/__metadata.json')
         .then(function(response) {
             return response.json();
         })
