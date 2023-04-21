@@ -9,7 +9,7 @@ const title = route.params.title
 const html = ref("")
 
 onMounted(() => {
-    fetch('articles/' + title + '.md')
+    fetch('./articles/' + title + '.md')
      .then(function(response) {
          return response.text()
      })
