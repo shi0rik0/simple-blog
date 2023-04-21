@@ -33,5 +33,5 @@ articles.sort(key=lambda x: x['date'])
 for i in articles:
     i['date'] = str(i['date'])
 
-with open(dst_path / '__metadata.json', 'w', encoding='utf-8') as f:
+with open(dst_path / 'metadata.json', 'w', encoding='utf-8') as f:
     json.dump(articles, f)
